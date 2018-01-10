@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+    /*------------------------------ACCESSING THE DOM*/   
+    //Returns a reference to the element by its ID.
+    document.getElementById(id);
+    
+    //Returns an array-like object of all child elements which have all of the given class names.
+    document.getElementsByClassName(names);
+    
+    //Returns an HTMLCollection of elements with the given tag name. 
+    document.getElementsByTagName(name);
+    
+    //Returns the first element within the document that matches the specified group of selectors.
+    document.querySelector(selectors);
+    
+    //Returns a list of the elements within the document (using depth-first pre-order traversal of the document's nodes) 
+    //that match the specified group of selectors. 
+    document.querySelectorAll(selectors);
+    
+    
+    /*-----------------------------EASIER WAY TO USE DOM*/
+    //Instead of this:
+    var tag = document.getElementById("highlight");
+    tag.style.color = "blue";
+    tag.style.border = "10px solid red";
+       
+    /*Define a class in CSS*/
+    .some-class {
+      color: blue;
+      border: 10px solid red;
+    }
+    
+    var tag = document.getElementById("highlight");
+    //Add the new class to the selected element
+    tag.classList.add("some-class");
+    
+    /*----------------------------- .classList*/
+    var tag = document.querySelector("h1");
+    
+    //Define a class in css
+    .another-class {
+      color: purple;
+      fontSize: 76px;
+    }
+
+    //ADD A CLASS TO THE SELECTED ELEMENT
+    tag.classList.add("another-class");
+    
+    //REMOVE A CLASS
+    tag.classList.remove("another-class");
+    
+    //TOGGLE A CLASS
+    tag.classList.toggle("another-class");    
+    
+    
+    /*---------------------------- .textContent*/
+    var tag = document.querySelector("p");
+    // To get all text content:
+    tag.textContent
+    
+    /*---------------------------- .innerHTML*/
+    var tag = document.querySelector("p");
+    
+    tag.innerHTML
+    //"This is an <strong>awesome</strong> paragraph"
+    
+    /*--------------------------- Attributes*/
+    var link = document.querySelector("a");
+    link.getAttribute("href");  //"www.google.com"
+    //CHANGE HREF ATTRIBUTE
+    link.setAttribute("href","www.dogs.com"); 
+    ///<a href="www.dogs.com">I am a link</a>
+    
+    //TO CHANGE THE IMAGE SRC
+    var img = document.querySelector("img");
+    img.setAttribute("src", "corgi.png");
+    //<img src="corgi.png">
+    
+    </script>
+</head>
+<body>
+    
+    <p>
+      This is an <strong>awesome</strong> paragraph 
+    </p>
+    
+    <a href="www.google.com">I am a link</a>
+    <img src="logo.png">
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Register</h1>
+    
+<form>
+    <label for="firstname">First Name: </label>
+    <input name="firstname" type="text" id="firstname" placeholder="John" required>
+    
+    <label for="lastname">Last Name: </label>
+    <input name="lastname" type="text" id="lastname" placeholder="Smith">
+    
+    <div>
+        <label for="male">Male</label>
+        <input value="male" name="gender" type="radio" id="male" checked=checked>
+        
+        <label for="female">Female</label>
+        <input value="female" name="gender" type="radio" id="female">
+    </div>
+
+    <div>
+        <label for="email">Email: </label>
+        <input name="email" type="email" placeholder="your email" id="email" required>
+    
+        <label for="password">Password: </label>
+        <input name="password" type="password" id="password" placeholder="your password" required>
+    </div>
+    
+    <div>
+        <label>
+            Birthday:
+            <select name="month">
+                <option>Month</option>
+                <option>February</option>
+            </select>
+            <select name="day">
+                <option>Day</option>
+                <option>02</option>
+            </select>
+            <select name="year">
+                <option>Year</option>
+                <option>1986</option>
+            </select>
+        </label>
+    </div>
+    
+    <div>
+        <label for="terms"></label>I agree to the terms and conditions: </label>
+        <input type="checkbox" id="terms" name="terms">
+    </div>
+    
+    <button>Go!</button>
+    
+    </form>
+    
+</body>
+</html>
