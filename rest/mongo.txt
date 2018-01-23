@@ -1,0 +1,21 @@
+Mongo Commands:
+
+mongod - need to keep running in seperate bash to use mongo at all
+
+mongo - opens shell in bash to use mongo
+
+help: shows basic features of mongodb
+
+show dbs
+
+use demo: creates a database called demo
+
+insert: db.dogs.insert({name: "Rusty", breed: "Mutt"})- db is the database demo. dogs is the collection were creating that doesnt exist yet. 
+
+show collections - will now show dogs collection
+
+db.dogs.find() - lists everything in the dogs collection
+
+db.dogs.update({name: "Lulu"}, {breed: "Doodle"}) - updates the the collection with name to lulu to a breed of doodle.
+
+db.dogs.remove({breed: "Labradoodle"}) - deletes
